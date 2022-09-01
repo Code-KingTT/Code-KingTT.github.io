@@ -4,8 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 终相忘的个人博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="静态博客搭建总结, 终相忘的个人博客">
+    <meta name="description" content="一、环境准备1.安装node.js
+下载地址：起飞
+
+安装验证：node -v      npm -v
+
+
+2.安装git
+下载地址：起飞
+安装验证：git -v
+
+3.安装cnpm
+安装命令：npm install -g cnpm –re">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +28,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 终相忘的个人博客</title>
+    <title>静态博客搭建总结 | 终相忘的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -332,12 +343,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">静态博客搭建总结</h1>
                 </div>
             </div>
         </div>
@@ -359,9 +370,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">静态博客搭建</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -373,7 +388,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-08-31
+                    2022-09-01
                 </div>
                 
 
@@ -394,19 +409,143 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h1 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h1><h2 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h2><ul>
+<li><p>下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/" title="转到官网">起飞</a></p>
+</li>
+<li><p>安装验证：<strong>node -v</strong>      <strong>npm -v</strong></p>
+</li>
+</ul>
+<h2 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h2><ul>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://git-scm.com/download/win" title="转到官网">起飞</a></li>
+<li>安装验证：<strong>git -v</strong></li>
+</ul>
+<h2 id="3-安装cnpm"><a href="#3-安装cnpm" class="headerlink" title="3.安装cnpm"></a>3.安装cnpm</h2><ul>
+<li>安装命令：<strong>npm install -g cnpm –registry==<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></strong></li>
+<li>安装验证：<strong>cnpm -v</strong><blockquote>
+<p>注：国内镜像源速度慢，所以利用npm安装cnpm(淘宝镜像源)</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="4-安装hexo"><a href="#4-安装hexo" class="headerlink" title="4.安装hexo"></a>4.安装hexo</h2><ul>
+<li>安装命令：<strong>cnpm install -g hexo-cli</strong></li>
+<li>安装验证：<strong>hexo -v</strong></li>
+</ul>
+<blockquote>
+<p>注：安装完成后，检查环境变量配置是否有遗漏或者路径错误</p>
+</blockquote>
+<img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" class=""> 
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1 id="二、Github配置"><a href="#二、Github配置" class="headerlink" title="二、Github配置"></a>二、Github配置</h1><h2 id="1-在Github建库"><a href="#1-在Github建库" class="headerlink" title="1.在Github建库"></a>1.在Github建库</h2><ul>
+<li>创建一个为<strong>用户名.github.io</strong>的仓库</li>
+<li>建库页面如下(爆红是因为已经建过了)：<img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/%E5%BB%BA%E5%BA%93.png" class=""> 
+<blockquote>
+<ol>
+<li>未注册过Github可用邮箱注册，注册时须在邮箱验证</li>
+<li>以后网站访问地址为：http://用户名.github.io</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-配置SSH免密登录"><a href="#2-配置SSH免密登录" class="headerlink" title="2.配置SSH免密登录"></a>2.配置SSH免密登录</h2><ol>
+<li><p>在任意一个空文件夹下右击打开<strong>Git Bash Here</strong>输入命令：<strong>ssh-keygen -t rsa -C github邮件地址</strong>，连敲四次回车，出现下图代表成功</p>
+<img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/ssh%E5%AF%86%E5%8C%99.png" class=""> </li>
+<li><p>在<strong>C:\Users</strong>路径下找到**.ssh<strong>文件夹，用记事本打开</strong>id_rsa.pub**文件，全选复制里面内容</p>
+</li>
+<li><p>打开Github主页，进入<strong>settings-&gt; SSH and GPG keys -&gt; New SSH key</strong>,将内容复制进<strong>Key</strong>中，<strong>Title</strong>随便写，保存</p>
+</li>
+<li><p>在<strong>Git Bash Here</strong>中输入命令：<strong>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;</a></strong>，然后输入<strong>yes</strong>，看到<strong>Hi······</strong>则说明配置成功</p>
+</li>
+<li><p>在<strong>Git Bash Here</strong>中输入<strong>git config –global user.name “用户名”</strong> ，回车再输入**git config –global user.email  “注册邮箱”**，配置完成。</p>
+</li>
+</ol>
+<h2 id="3-利用hexo框架搭建博客"><a href="#3-利用hexo框架搭建博客" class="headerlink" title="3.利用hexo框架搭建博客"></a>3.利用hexo框架搭建博客</h2><ol>
+<li><p>新建文件夹，作为你以后存放博客文件和代码的地方，并在该文件夹里右击打开<strong>Git  Bash Here</strong>,输入命令：<strong>hexo init</strong>，初始化后如下图：</p>
+<img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/Init.png" class=""> </li>
+<li><p>在<strong>Git Bash Here</strong>中依次输入命令：<strong>hexo g</strong> 、<strong>hexo s</strong>，可打开<strong><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></strong>访问你的博客</p>
+<blockquote>
+<p>hexo g 表示在public文件夹下生成相关html文件<br>hexo s 表示开启本地预览服务</p>
+<p>hexo d 表示将文件部署到设定的仓库中</p>
+<p>hexo clean 表示清理缓存文件，网站显示异常可输入该命令</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="4-将博客部署到Github"><a href="#4-将博客部署到Github" class="headerlink" title="4.将博客部署到Github"></a>4.将博客部署到Github</h2><ol>
+<li><p>在你的博客文件夹下打开<strong>Git Bash Here</strong>输入命令：<strong>npm install hexo-deployer-git –save</strong></p>
+</li>
+<li><p>在你的博客文件夹下找到**_config.yml<strong>文件，用VScode打开，找到</strong>deploy:**并修改为如下图：</p>
+ </li>
+</ol>
+<blockquote>
+<p>注：repo后为你的Github仓库链接</p>
+</blockquote>
+<p>​                <img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5.png" class=""> </p>
+<ol start="3">
+<li>在<strong>Git Bash Here</strong>中继续输入命令：<strong>hexo d</strong>,将本地博客文件发送到Github仓库中，此时可能需要让你输入Github的用户名和密码，输入即可，推送成功后可通过Github链接访问你的博客网站</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">搭建完成</th>
+</tr>
+</thead>
+</table>
+<hr>
+<h1 id="三、主题"><a href="#三、主题" class="headerlink" title="三、主题"></a>三、主题</h1><h2 id="1-寻找主题"><a href="#1-寻找主题" class="headerlink" title="1.寻找主题"></a>1.寻找主题</h2><ul>
+<li>Hexo官网：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">起飞</a></li>
+<li>B站</li>
+<li>大佬分享</li>
+</ul>
+<h2 id="2-下载主题"><a href="#2-下载主题" class="headerlink" title="2.下载主题"></a>2.下载主题</h2><ol>
+<li><p>在你的博客文件夹下打开<strong>Git Bash Here</strong>输入命令：<strong>git clone 主题http链接  themes/主题名称</strong></p>
+</li>
+<li><p>在博客文件夹中的<strong>theme文件夹</strong>下可查看是否下载成功</p>
+<h2 id="3-更换主题"><a href="#3-更换主题" class="headerlink" title="3.更换主题"></a>3.更换主题</h2></li>
+<li><p>打开你的博客文件夹下的**_config.yml<strong>文件，找到</strong>theme: landscape<strong>，并将</strong>landscape**修改为你的主题名如下：   <img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2.png" class=""> </p>
+</li>
+<li><p>在你的博客文件夹下打开<strong>Git Bash Here</strong>输入命令：<strong>hexo g</strong>重新生成</p>
+</li>
+<li><p>刷新仓库代码，并打开你的博客网站欣赏新主题</p>
+<blockquote>
+<p>注：一般得等一会才能生效</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="4-修改主题"><a href="#4-修改主题" class="headerlink" title="4.修改主题"></a>4.修改主题</h2><ul>
+<li>在你的主题文件夹中找到**_config.yml<strong>文件(并非博客文件夹下的</strong>_config.yml**文件)，打开修改里面内容即可</li>
+<li>每次修改完须在博客文件夹下打开<strong>Git Bash Here</strong>执行命令：hexo g/hexo s(不看预览效果可不执行)/hexo d</li>
+</ul>
+<h1 id="四、写博客"><a href="#四、写博客" class="headerlink" title="四、写博客"></a>四、写博客</h1><h2 id="1-编辑工具"><a href="#1-编辑工具" class="headerlink" title="1.编辑工具"></a>1.编辑工具</h2><ul>
+<li>T0：<strong>Typora</strong>(本人使用这款，目前Typora已收费，可通过QQ联系本人破解版)</li>
+<li>T1：<strong>StackEdit</strong>、<strong>dillinger</strong>、<strong>QOwnNotes</strong></li>
+<li>T2：<strong>VSCode</strong>、<strong>markdownPad</strong>等</li>
+</ul>
+<h2 id="2-写博客"><a href="#2-写博客" class="headerlink" title="2.写博客"></a>2.写博客</h2><ol>
+<li><p>创建md文件：方法一：在博客文件下打开<strong>Git Bash Here</strong>执行命令：<strong>hexo new 博客名</strong>,此时在博客目录下的<strong>\source\_posts</strong>中生成了相关md文件</p>
+<p>​                           方法二：在<strong>\source\_posts</strong>中手动创建md文件</p>
+</li>
+<li><p>用编辑器打开该md文件，编写完成后保存</p>
+</li>
+<li><p>在博客文件下打开<strong>Git Bash Here</strong>依次执行命令：<strong>hexo clean</strong>、<strong>hexo g</strong>、<strong>hexo d</strong></p>
+</li>
+</ol>
+<h2 id="3-图片插入"><a href="#3-图片插入" class="headerlink" title="3.图片插入"></a>3.图片插入</h2><ul>
+<li><p>在博客文件夹中的**_config.yml**文件中修改配置如下：</p>
+<img src="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90.png" class=""> </li>
+<li><p>此时<strong>hexo g</strong>后会在<strong>\source\_posts</strong>下生成该md文件的资源文件夹，将所插入图片复制进去就行，后期<strong>hexo d</strong>时会将这些资源也发送到<strong>Github</strong>仓库中</p>
+</li>
+<li><p>使用 来在Typora中**<u>稳定的</u>**插入图片，其中只需将image.jpg替换为你的图片名加后缀</p>
+</li>
+</ul>
+<h1 id="五、后续"><a href="#五、后续" class="headerlink" title="五、后续"></a>五、后续</h1><h2 id="1-站点部署"><a href="#1-站点部署" class="headerlink" title="1.站点部署"></a>1.站点部署</h2><ul>
+<li><p>可在国内某云购买</p>
+</li>
+<li><p>Github pages(国内访问速度慢)</p>
+</li>
+<li><p>netlify(可与后文提到的cloudflare搭配)</p>
+<h2 id="2-访问加速"><a href="#2-访问加速" class="headerlink" title="2.访问加速"></a>2.访问加速</h2></li>
+<li><p>cloudflare</p>
+</li>
+</ul>
 
                 
             </div>
@@ -433,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/08/31/hello-world/">http://example.com/2022/08/31/hello-world/</a>
+                    <a href="http://example.com/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/">http://example.com/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -470,7 +609,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">静态博客搭建</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -514,9 +657,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/09/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93/">
                     <div class="card-image">
@@ -534,9 +678,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -545,6 +689,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -560,7 +705,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/08/31/hello-world/">
@@ -590,7 +735,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
