@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Mysql笔记</title>
+      <link href="/2022/09/23/Mysql%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/09/23/Mysql%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、数据库概述"><a href="#一、数据库概述" class="headerlink" title="一、数据库概述"></a>一、数据库概述</h1><ol><li><p>数据库的引入：实现数据“持久化”。</p><blockquote><p>持久化：将内存中数据存储在关系型数据库、磁盘文件、XML文件等中</p></blockquote></li><li><p>数据库相关概念：</p><ul><li>DB：数据库(Database)：即存储数据的“仓库”，本质是一个文件系统。</li><li>DBMS：数据库管理系统(Database Management System)：是一种管理数据库的大型软件，用于建立、使用和维护数据库。</li><li>SQL：结构化查询语言(Structured Query Language)：专门用来与数据库通信的语言。</li></ul></li><li><p>数据库管理系统、数据库与表的关系：</p><img src="/2022/09/23/Mysql%E7%AC%94%E8%AE%B0/%E5%85%B3%E7%B3%BB%E5%9B%BE.jpg" class=""> </li><li><p>表的关联关系：</p><ul><li>一对一关联</li><li>一对多关联</li><li>多对多关联</li><li>自我引用</li></ul></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java知识点</title>
       <link href="/2022/09/13/Java%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
       <url>/2022/09/13/Java%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
