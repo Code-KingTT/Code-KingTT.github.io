@@ -393,14 +393,14 @@ DBMS：数据库管">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-23
+                    2022-10-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    175
+                    523
                 </div>
                 
 
@@ -448,6 +448,52 @@ DBMS：数据库管">
 <li>一对多关联</li>
 <li>多对多关联</li>
 <li>自我引用</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>一些命令：</p>
+<ul>
+<li>启动MySQL服务：net start MySQL服务名</li>
+<li>停止MySQL服务：net stop MySQL服务名</li>
+<li>登录：mysql -h 主机名 -P 端口号 -u 用户名 -p密码</li>
+<li>退出登录：exit 或 quit 或 Crtl + Z</li>
+</ul>
+</blockquote>
+<h2 id="常见问题汇总"><a href="#常见问题汇总" class="headerlink" title="常见问题汇总"></a>常见问题汇总</h2><ol>
+<li><p>root用户密码忘记，重置操作如下：</p>
+<img src="/2022/09/23/Mysql%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE.jpg" class=""> </li>
+<li><p>报错：不是内部或外部命令</p>
+<p>原因：环境变量问题</p>
+</li>
+<li><p>报错：mysql本地计算机上的MySQL服务启动后停止，某些服务在未由其他服务或程序使用时将自动停止</p>
+<p>解决：清空data内容—&gt;bin目录下打开命令行输入：mysqld –initialize—&gt;启动MySQL—&gt;在data中的.err文件找到随机生成密码—&gt;命令行登录MySQL—&gt;更改密码：ALTER user ‘root‘@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘新密码’;—&gt;刷新：flush privileges</p>
+</li>
+</ol>
+<h1 id="二、SQL概述"><a href="#二、SQL概述" class="headerlink" title="二、SQL概述"></a>二、SQL概述</h1><h2 id="1-SQL分类"><a href="#1-SQL分类" class="headerlink" title="1.SQL分类"></a>1.SQL分类</h2><ol>
+<li>DDL(数据定义语言)<ul>
+<li><em>CREATE DATABASE</em> - 创建新数据库</li>
+<li><em>ALTER DATABASE</em> - 修改数据库</li>
+<li><em>CREATE TABLE</em> - 创建新表</li>
+<li><em>ALTER TABLE</em> - 变更数据库表</li>
+<li><em>DROP TABLE</em> - 删除表</li>
+<li><em>CREATE INDEX</em> - 创建索引（搜索键）</li>
+<li><em>DROP INDEX</em> - 删除索引</li>
+</ul>
+</li>
+<li>DML(数据操作语言)<ul>
+<li><em>SELECT</em> - 从数据库表中获取数据</li>
+<li><em>UPDATE</em> - 更新数据库表中的数据</li>
+<li><em>DELETE</em> - 从数据库表中删除数据</li>
+<li><em>INSERT INTO</em> - 向数据库表中插入数据</li>
+</ul>
+</li>
+<li>DCL(数据控制语言)<ul>
+<li>COMMIT - 提交(事务)</li>
+<li>ROLLBACK - 撤销(事务)</li>
+<li>SAVEPOINT - 设立保存点</li>
+<li>GRANT - 赋予权限</li>
+<li>REVOKE - 回收权限</li>
 </ul>
 </li>
 </ol>
@@ -562,18 +608,17 @@ DBMS：数据库管">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/09/23/Mysql%E7%AC%94%E8%AE%B0/">
+                <a href="/2022/11/01/MyBatis/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Mysql笔记">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="MyBatis">
                         
-                        <span class="card-title">Mysql笔记</span>
+                        <span class="card-title">MyBatis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -583,9 +628,9 @@ DBMS：数据库管">
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-01
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -594,12 +639,11 @@ DBMS：数据库管">
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Mysql/">
-                        <span class="chip bg-color">Mysql</span>
+                    <a href="/tags/MyBatis/">
+                        <span class="chip bg-color">MyBatis</span>
                     </a>
                     
                 </div>
@@ -784,7 +828,7 @@ DBMS：数据库管">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.5k</span>
+                        class="white-color">2.2k</span>
             
             
             
